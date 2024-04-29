@@ -257,10 +257,7 @@ export const Answer = ({
                             </Stack>
                         </Stack.Item>
                     )}
-                    <Stack.Item className={styles.answerDisclaimerContainer}>
-                        <span className={styles.answerDisclaimer}>AI-generated content may be incorrect</span>
-                    </Stack.Item>
-                </Stack>
+                </Stack>   
                 {chevronIsExpanded &&
                     <div className={styles.citationWrapper} >
                         {parsedAnswer.citations.map((citation, idx) => {

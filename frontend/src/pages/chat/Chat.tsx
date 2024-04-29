@@ -11,6 +11,7 @@ import DOMPurify from 'dompurify';
 
 import styles from "./Chat.module.css";
 import RHB from "../../assets/RHB.svg.png";
+import RHBbg from "../../assets/RHB_bg.jpeg";
 import { XSSAllowTags } from "../../constants/xssAllowTags";
 
 import {
@@ -659,7 +660,9 @@ const Chat = () => {
     }
 
     return (
-        <div className={styles.container} role="main">
+        <div className={styles.container} role="main" >
+            <img src={RHBbg} className={styles.rhbBackground}/>
+            <div className={styles.overlay}></div>
             {showAuthMessage ? (
                 <Stack className={styles.chatEmptyState}>
                     <ShieldLockRegular className={styles.chatIcon} style={{ color: 'darkorange', height: "200px", width: "200px" }} />
@@ -681,8 +684,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>{ui?.chat_title}</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>{ui?.chat_description}</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>ESG A.I. Knowledge Base Chatbot</h1>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px" }} role="log">
