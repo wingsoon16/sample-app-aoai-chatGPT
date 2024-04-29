@@ -48,7 +48,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
         <Stack horizontal className={styles.questionInputContainer}>
             <TextField
                 className={styles.questionInputTextArea}
-                placeholder={placeholder}
+                placeholder= "Ask Rhubix a question."
                 multiline
                 resizable={false}
                 borderless

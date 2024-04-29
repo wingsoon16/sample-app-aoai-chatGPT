@@ -684,7 +684,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>ESG A.I. Knowledge Base Chatbot</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>ESG AI Knowledge Base Chatbot</h1>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px" }} role="log">
